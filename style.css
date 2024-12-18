@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    margin: 0 10px;
+
+}
+.container{
+    max-width: 1348px;
+    margin: auto;
+    padding: 0 25px;
+
+}
+h1{
+    font-size: 60px;
+    color: rgb(255, 82, 111);
+    text-align: center;
+    font-style: oblique;
+}
+p{
+    color: rgb(150, 39, 58);
+    font-size: 28px;
+    font-style: italic;
+}
+#input{
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+.col{
+    flex-basis: 50%;
+}
+.col label{
+    width: 100%;
+    margin: 160px 0;
+    padding: 200px 0; 
+    color: brown;
+    height: 100px;
+}
+
+.col input{
+    display: inline-block;
+    border: 1px groove grey;
+    border-radius: 5px;
+    width:100%;
+    padding: 8px 0;
+    background-color: rgba(255, 107, 132, 0.575);
+    color: red;
+    margin: 10px 0;
+}
+input:focus{
+    outline: none;
+}
+.container #submit input{
+    display: inline-block;
+    color: white;
+    background: red;
+    padding: 8px 8px;
+    top: 30px;
+    border-radius: 30px;
+    width: 80px;
+    position: relative;
+
+}
+#submit input:hover{
+    background-color:rgb(248, 127, 147) ;
+    transition:0.6s;
+    color: rgb(114, 112, 112);
+    transform: translateY();
+
+}
+#result{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px groove rgb(253, 150, 167);
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100px;
+
+}
+@media only screen and ( max-width: 720px) {
+
+    
+#input{
+    align-items: center;
+    text-align: center;
+
+}
+.col{
+    flex-basis: 100%;
+}
+#result{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+
+    }
